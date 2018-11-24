@@ -75,8 +75,11 @@ nav ul li a{
   opacity: 1;
   right: 0;
 }
-.header {
-  margin-top: 130px;
+#headerOne {
+  margin-top: 190px;
+}
+#headerTwo {
+  margin-top: 85px;
 }
 .credit {
   margin-top: 100px;
@@ -95,7 +98,6 @@ nav ul li a{
 .value {
   height: 500px;
 }
-
 
 h1 {
   font-family: "title";

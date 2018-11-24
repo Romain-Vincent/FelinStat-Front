@@ -86,6 +86,17 @@ nav ul li a{
 #headerTwo {
   margin-top: 85px;
 }
+#headerThree {
+  margin-top: 80px;
+  background-color: #b0a084;
+}
+#boardOne {
+  margin-left: 150px;
+}
+
+.boardThree {
+  background-color: #b0a084;
+}
 .credit {
   margin-top: 100px;
 }
@@ -99,6 +110,7 @@ nav ul li a{
 .bande {
   text-align: center;
   border-style: double;
+  background-color: #b0a084;
 }
 .value {
   height: 500px;

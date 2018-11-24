@@ -12,7 +12,7 @@
   <body>
     <nav>
       <ul>
-        <li><a href="index.html">Accueil</a></li>
+        <li><a href="../index.html">Accueil</a></li>
         <li><a href="profil.html">Profil de vie des armes</a></li>
         <li><a href="display.html">Armes à surveiller</a></li>
         <li><a href="credits.html">Crédits</a></li>
@@ -65,10 +65,10 @@
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                
+
             }
         };
-        xmlhttp.open("GET", "http://localhost:8080/weapon.json?id=" + new URLSearchParams(window.location.search).get("id"), true);
+        xmlhttp.open("GET", "http://93.118.34.39:8082/weapon.json?id=" + new URLSearchParams(window.location.search).get("id"), true);
         xmlhttp.send();
       </script>
 

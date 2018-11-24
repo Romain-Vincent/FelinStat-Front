@@ -97,3 +97,10 @@
   font-family: "Army";
   font-size: 50px;
 }
+
+.arrow {
+  background-image: url(../fleche.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}

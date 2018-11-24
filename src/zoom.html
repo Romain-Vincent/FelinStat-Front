@@ -76,11 +76,11 @@
             if (this.readyState == 4 && this.status == 200) {
               var arr = JSON.parse(this.responseText).elems;
               arr.forEach(function(e) {
-                document.getElementById("date").innerHTML += e.date + "<br/>";
-                document.getElementById("dem").innerHTML += e.applicant + "<br/>";
-                document.getElementById("rep").innerHTML += e.repairor + "<br/>";
-                document.getElementById("niv").innerHTML += e.interventionLevel + "<br/>";
-                document.getElementById("it").innerHTML += e.itType + "<br/>";
+                document.getElementById("date").innerHTML += '<na id="case">' + e.date + "</na><br/>";
+                document.getElementById("dem").innerHTML += '<na id="case">' + e.applicant + "</na><br/>";
+                document.getElementById("rep").innerHTML += '<na id="case">' + e.repairor + "</na><br/>";
+                document.getElementById("niv").innerHTML += '<na id="case">' + e.interventionLevel + "</na><br/>";
+                document.getElementById("it").innerHTML += '<na id="case">' + e.itType + "</na><br/>";
               });
             }
         };

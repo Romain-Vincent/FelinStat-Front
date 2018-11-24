@@ -1,6 +1,5 @@
 body {
   background-color: #001a33;
-  /* background-image: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
 }
 nav{
   z-index: 1000;
@@ -23,12 +22,18 @@ nav ul li{
   height: 2%;
 }
 nav ul li a{
+  font-family: "title";
   text-decoration: none;
   color: white;
   padding: 20px;
 }
 
 /* END NAV BAR --------------------------------------------- */
+
+@font-face {
+	font-family: "title";
+	src: url('../template/police/Typo Grotesk Rounded Demo.otf');
+}
 
 .sub-main{
   width: 30%;
@@ -81,7 +86,7 @@ nav ul li a{
   border-style: double;
   overflow-y: scroll;
   height: 350px;
-  background-color: #ffe6b3;
+  background-color: #b0a084;
 }
 .bande {
   text-align: center;
@@ -93,6 +98,7 @@ nav ul li a{
 
 
 h1 {
+  font-family: "title";
   text-align: center;
   color: white;
 }
@@ -117,7 +123,7 @@ hr {
   color: #FFFF;
   background-color: #FFFF;
   border: none;
-  }
+}
 
 #paraOne {
   padding-top: 95px;
@@ -136,8 +142,13 @@ hr {
 }
 
 img.resize {
-    width:60%;
-    height: auto;
+  width:60%;
+  height: auto;
+}
+img {
+  border-style: double;
+  text-align: center;
+  border-color: white;
 }
 
 .banner {
@@ -151,7 +162,6 @@ img.resize {
 
 .container_zoom {
   position: relative;
-  background-image: linear-gradient(342deg, rgba(177,15,105,.8) 0%, rgba(255,154,0,.2) 100%), url("https://images.pexels.com/photos/1260584/pexels-photo-1260584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-position: center;
   background-size: 60rem;
   border-radius: .5rem;

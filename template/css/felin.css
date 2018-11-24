@@ -1,5 +1,6 @@
 body {
   background-color: #001a33;
+  background-image: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
 nav{
   z-index: 1000;
@@ -122,6 +123,18 @@ hr {
   padding-top: 95px;
 }
 
+#paraOne p {
+  text-align: left;
+}
+
+#paraTwo {
+  padding-top: 95px;
+}
+
+#paraTwo p {
+  text-align: right;
+}
+
 img.resize {
     width:60%;
     height: auto;
@@ -156,6 +169,28 @@ img.resize {
     margin: 5%;
     text-transform: lowercase;
     display: inline-block;
+}
+
+.container_profil {
+  position: relative;
+  background-image: linear-gradient(342deg, rgba(177,15,105,.8) 0%, rgba(255,154,0,.2) 100%), url("https://images.pexels.com/photos/1592109/pexels-photo-1592109.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: center;
+  background-size: 60rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 2.5rem -.5rem;
+  width: 50%;
+  height: 20%;
+  margin: auto;
+  text-align: left;
+}
+
+.card_zoom_header p {
+  position: relative;
+  color: white;
+  text-align: left;
+  margin: 5%;
+  text-transform: lowercase;
+  display: inline-block;
 }
 
 .carousel-item {

@@ -116,7 +116,7 @@
               {
                 if (criticalMax > 0)
                 {
-                  document.getElementById("criticalId").innerHTML += e.key + "<br/>";
+                  document.getElementById("criticalId").innerHTML += '<a href="zoom.html?id=' + e.key + '">' + e.key + "</a><br/>";
                   document.getElementById("criticalDate").innerHTML += e.value.item2 + "<br/>";
                   document.getElementById("criticalDays").innerHTML += e.value.item1 + "<br/>";
                   criticalMax--;
@@ -126,7 +126,7 @@
               {
                 if (sensibleMax > 0)
                 {
-                  document.getElementById("sensibleId").innerHTML += e.key + "<br/>";
+                  document.getElementById("sensibleId").innerHTML += '<a href="zoom.html?id=' + e.key + '">' + e.key + "</a><br/>";
                   document.getElementById("sensibleDate").innerHTML += e.value.item2 + "<br/>";
                   document.getElementById("sensibleDays").innerHTML += e.value.item1 + "<br/>";
                   sensibleMax--;

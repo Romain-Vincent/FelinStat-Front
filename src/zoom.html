@@ -61,6 +61,16 @@
 
     &nbsp;
 
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                
+            }
+        };
+        xmlhttp.open("GET", "http://localhost:8080/weapon.json?id=" + new URLSearchParams(window.location.search).get("id"), true);
+        xmlhttp.send();
+      </script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

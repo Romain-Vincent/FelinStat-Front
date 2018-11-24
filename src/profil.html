@@ -142,6 +142,8 @@
 						    var data = google.visualization.arrayToDataTable(array);
 
                             var options = {
+                                legend: { position: 'bottom' },
+                                title: "Maintenance time"
                             };
 
                             var chart = new google.visualization.ColumnChart(document.getElementById('testChart'));
@@ -172,6 +174,8 @@
 						    var data = google.visualization.arrayToDataTable(array);
 
                             var options = {
+                                legend: { position: 'bottom' },
+                                title: "Time before next maintenance"
                             };
 
                             var chart = new google.visualization.AreaChart(document.getElementById('testChart2'));
@@ -202,6 +206,8 @@
 						    var data = google.visualization.arrayToDataTable(array);
 
                             var options = {
+                                legend: { position: 'bottom' },
+                                title: "Time since last maintenance"
                             };
 
                             var chart = new google.visualization.AreaChart(document.getElementById('testChart3'));

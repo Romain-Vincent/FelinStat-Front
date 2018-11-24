@@ -2,6 +2,7 @@ body {
   background-color: #001a33;
 }
 nav{
+  z-index: 1000;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -112,14 +113,21 @@ h5 {
   color: white;
 }
 p {
-  padding-top: 95px;
   text-align: center;
   color: white;
   font-family: 'raspoutine';
 }
 
+#paraOne {
+  padding-top: 95px;
+}
+
+img.resize {
+    width:60%;
+    height: auto;
+}
+
 .banner {
-  margin-left: -125px;
   text-align: center;
   width: 50px;
 }

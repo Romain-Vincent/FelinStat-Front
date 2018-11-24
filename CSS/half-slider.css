@@ -34,7 +34,7 @@
 
 .army_image {
   width: 100%;
-  height: 1000px;
+  height: 972px;
   background-image: url(../army_banner.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -47,7 +47,53 @@
   font-style: normal;
 }
 .title_banner {
-  position: absolute;
+  font-family: "Army";
+  display: block;
+  font-size: 100px;
+  text-align: center;
+  position: relative;
+  top: 100px;
+  left: 0px;
+  color: #aaaaaa;
+}
+
+.numberarea {
+  height: 350px;
+  width: 100%;
+  background-color: cyan;
+  display: block;
+  z-index: 50;
+}
+
+.chiffre_clé_1 {
+  position: relative;
+  display: block;
+  left: 750px;
+  top: 90px;
+  font-family: "Army";
+  font-size: 50px;
+}
+
+.chiffre_clé_2 {
+  position: relative;
+  left: 400px;
   top: 50px;
-  left: 25px;  
+  font-family: "Army";
+  font-size: 50px;
+}
+
+.chiffre_clé_3 {
+  position: relative;
+  left: 1250px;
+  top: 15px;
+  font-family: "Army";
+  font-size: 50px;
+}
+
+.chiffre_clé_4 {
+  position: relative;
+  left: 900px;
+  top: 250  px;
+  font-family: "Army";
+  font-size: 50px;
 }

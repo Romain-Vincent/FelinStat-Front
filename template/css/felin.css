@@ -26,10 +26,6 @@ nav ul li a{
   color: white;
   padding: 20px;
 }
-nav ul li a:hover, nav ul li a:active{
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 8px;
-}
 
 /* END NAV BAR --------------------------------------------- */
 
@@ -75,6 +71,9 @@ nav ul li a:hover, nav ul li a:active{
 }
 .header {
   margin-top: 130px;
+}
+.credit {
+  margin-top: 500px;
 }
 .board {
   margin-top: 40px;

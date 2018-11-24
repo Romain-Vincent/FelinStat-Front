@@ -244,3 +244,7 @@ img {
   -o-background-size: cover;
   background-size: cover;
 }
+
+#weaponName {
+  text-align: center;
+}

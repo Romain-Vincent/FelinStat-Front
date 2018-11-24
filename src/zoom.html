@@ -24,6 +24,9 @@
     <div class="row" id="headerTwo">
       <div class="col-sm-12">
         <h1>Analyse des armes à risques</h1>
+        <br/><br/>
+        
+        <h5 id="weaponName">Analyse des armes à risques</h5>
       </div>
     </div>
 
@@ -32,13 +35,13 @@
           <h5>Date ouverture</h5>
         </div>
         <div class="col-md-2 bande">
-          <h5>demandeur</h5>
+          <h5>Demandeur</h5>
         </div>
         <div class="col-md-2 bande">
-          <h5>reparateur</h5>
+          <h5>Réparateur</h5>
         </div>
         <div class="col-md-2 bande">
-          <h5>niveau d'intervention</h5>
+          <h5>Niveau d'intervention</h5>
         </div>
         <div class="col-md-2 bande">
           <h5>Type d'IT</h5>
@@ -46,31 +49,24 @@
     </div>
     <div class="row" id="boardOne">
         <div class="col-md-2 col-md-offset-1 bande">
-          <na id="criticalId"></na>
-          plop
+          <na id="date"></na>
         </div>
         <div class="col-md-2 bande">
-          <na id="criticalDate"></na>
+          <na id="dem"></na>
         </div>
         <div class="col-md-2 bande">
-          <na id="criticalDays"></na>
+          <na id="rep"></na>
         </div>
         <div class="col-md-2 bande">
-          <na id="criticalDays"></na>
+          <na id="niv"></na>
         </div>
         <div class="col-md-2 bande">
-          <na id="criticalDays"></na>
+          <na id="it"></na>
         </div>
     </div>
   </div>
 
     &nbsp;
-
-    <div class="container_zoom">
-        <div class="card_zoom_header">
-          <p style="text-align: left;">Arme : xx <br> Contexte : xx <br> Date de mise en service : xx </p>
-      </div>
-    </div>
 
     &nbsp;
 
@@ -78,10 +74,19 @@
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-
+              var arr = JSON.parse(this.responseText).elems;
+              arr.forEach(function(e) {
+                document.getElementById("date").innerHTML += e.date + "<br/>";
+                document.getElementById("dem").innerHTML += e.applicant + "<br/>";
+                document.getElementById("rep").innerHTML += e.repairor + "<br/>";
+                document.getElementById("niv").innerHTML += e.interventionLevel + "<br/>";
+                document.getElementById("it").innerHTML += e.itType + "<br/>";
+              });
             }
         };
-        xmlhttp.open("GET", "http://93.118.34.39:8082/weapon.json?id=" + new URLSearchParams(window.location.search).get("id"), true);
+        var weaponName = new URLSearchParams(window.location.search).get("id");
+        document.getElementById("weaponName").innerHTML = weaponName;
+        xmlhttp.open("GET", "http://93.118.34.39:8082/weapon.json?id=" + weaponName, true);
         xmlhttp.send();
       </script>
 

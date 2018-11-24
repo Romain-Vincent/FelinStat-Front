@@ -125,21 +125,23 @@
           var sensibleMax = 20;
           document.getElementById("xxxDays").innerHTML = mean;
           arr.forEach(function(e) {
-              if (e.value >= mean + 50)
+              if (e.value.item1 >= mean + 50)
               {
                 if (criticalMax > 0)
                 {
                   document.getElementById("criticalId").innerHTML += e.key + "<br/>";
-                  document.getElementById("criticalDays").innerHTML += e.value + "<br/>";
+                  document.getElementById("criticalDate").innerHTML += e.value.item2 + "<br/>";
+                  document.getElementById("criticalDays").innerHTML += e.value.item1 + "<br/>";
                   criticalMax--;
                 }
               }
-              else if (e.value >= mean + 25)
+              else if (e.value.item1 >= mean + 25)
               {
                 if (sensibleMax > 0)
                 {
                   document.getElementById("sensibleId").innerHTML += e.key + "<br/>";
-                  document.getElementById("sensibleDays").innerHTML += e.value + "<br/>";
+                  document.getElementById("sensibleDate").innerHTML += e.value.item2 + "<br/>";
+                  document.getElementById("sensibleDays").innerHTML += e.value.item1 + "<br/>";
                   sensibleMax--;
                 }
               }
